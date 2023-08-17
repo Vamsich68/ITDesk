@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@namespace ITDesk.Pages.Models
+
+@{
+
+    ViewData["Title"] = "Home page";
+    Employee newEmployee = new Employee()
+    {
+                EmployeeName = "Vamsi",
+                EmployeeId = "vamsichokkapu",
+                EmployeeDescription ="madhurawada, vizag"
+    };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3>new student details</h3>
+    @newEmployee.EmployeeId</br>
+    @newEmployee.EmployeeName</br>
+    @newEmployee.EmployeeDescription
+
+</div>
